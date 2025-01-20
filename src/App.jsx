@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import UserContext from "./context/userContext";
 import Home from "./components/Home";
 import UserDetail from "./components/userDetails";
+import NotFound from "./components/NotFound";
 
 import "./App.css";
 
@@ -38,8 +39,9 @@ class App extends Component {
         }}
       >
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/users/:userId" element={<UserDetail />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/users/:userId" element={<UserDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </UserContext.Provider>
     );
