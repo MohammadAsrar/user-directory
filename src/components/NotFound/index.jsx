@@ -1,5 +1,5 @@
 const NotFound = () => (
-  <div className="flex flex-col justify-center items-center h-screen dark:bg-slate-900 p-3">
+  <div className="flex flex-col justify-center items-center h-screen p-3">
     <img
       src="https://assets.ccbp.in/frontend/react-js/not-found-blog-img.png"
       alt="not found"
